@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700;800&family=Funnel+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Mode Switcher</title>
+</head>
+
+<body>
+    <!-- Light Mode -->
+    <div class="l-bg" id="l-m">
+        <div class="l-card">
+
+            <div class="l-control">
+                <p class="l-label">Current mode</p>
+
+                <div class="l-display">
+                    <p class="l-mode" title="Light🌞">Light🌞</p>
+                </div>
+            </div>
+
+            <button class="l-button" id="l-b" type="button" title="Switch to dark🌚">Switch mode</button>
+        </div>
+    </div>
+
+    <!-- Dark Mode -->
+    <div class="d-bg" id="d-m">
+        <div class="d-card">
+
+            <div class="d-control">
+                <p class="d-label">Current mode</p>
+
+                <div class="d-display">
+                    <p class="d-mode" title="Dark🌚">Dark🌚</p>
+                </div>
+            </div>
+
+            <button class="d-button" id="d-b" type="button" title="Switch to light🌞">Switch mode</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

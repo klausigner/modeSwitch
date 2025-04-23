@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700;800&family=Funnel+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --Sans: 'Funnel Sans', sans-serif;
+    --Display: 'Funnel Display', sans-serif;
+
+    --Blue-400: #3C3CFF;
+    --Blue-500: #0000FF;
+    --Blue-600: #0000D7;
+    --Black-800: #000000;
+    --Black-700: #191919;
+    --Black-600: #333333;
+    --Black-500: #5A5A5A;
+    --Black-400: #B4B4B4;
+    --Black-300: #DCDCDC;
+    --Black-200: #F1F1F1;
+    --Black-100: #F5F5F5;
+    --White: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Light Mode */
+
+.l-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Black-100);
+    /* display: none; */
+}
+
+.l-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--White);
+    width: 320px; 
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--Black-300);
+    gap: 24px;
+}
+
+.l-control {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.l-label {
+    width: 100%;
+    font-family: var(--Sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Black-800);
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.l-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Black-200);
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.l-mode {
+    font-family: var(--Display);
+    font-size: 56px;
+    font-weight: 600;
+    color: var(--Black-400);
+    line-height: 70px;
+    letter-spacing: -1.12px;
+}
+
+.l-button {
+    width: 100%;
+    background-color: var(--Blue-500);
+    color: var(--White);
+    padding: 12.5px 16px;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--Sans);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.24px;
+    cursor: pointer;
+}
+
+.l-button:hover {
+    background-color: var(--Blue-600);
+}
+
+/* Dark Mode */
+.d-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Black-800);
+    display: none;
+}
+
+.d-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--Black-700);
+    width: 320px; 
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--Black-500);
+    gap: 24px;
+}
+
+.d-control {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.d-label {
+    width: 100%;
+    font-family: var(--Sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--White);
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.d-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Black-600);
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.d-mode {
+    font-family: var(--Display);
+    font-size: 56px;
+    font-weight: 600;
+    color: var(--Black-400);
+    line-height: 70px;
+    letter-spacing: -1.12px;
+}
+
+.d-button {
+    width: 100%;
+    background-color: var(--Blue-500);
+    color: var(--White);
+    padding: 12.5px 16px;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--Sans);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.24px;
+    cursor: pointer;
+}
+
+.d-button:hover {
+    background-color: var(--Blue-400);
+}
